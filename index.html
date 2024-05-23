@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematika</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <h2>Welcome To Kalkulator Matematika</h2>
+    <p>Hai Sobat, Selamat Datang di Katik</p>
+    <p>Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar </p>
+    <div class="container">
+        <div class="left-side">
+            <h3 class="title">Luas Segitiga</h3>
+            <h5 class="formula">Rumus Luas Segitiga yaitu :</h5>
+            <h4>L = 1/2 × a × t</h4>
+            <p>Dimana:</p>
+            <p>L = Luas</p>
+            <p>a = Panjang alas</p>  
+            <p>t = Tinggi</p>    
+           
+            <div class="section">
+                <h3 class="title">Hitung Luas Segitiga</h3>
+                <input type="number" class="alas" id="alas" placeholder="Nilai Alas">
+                <input type="number" class="tinggi" id="tinggi" placeholder="Nilai Tinggi">
+                <button id="hitung" type="submit">Hitung</button>
+                <button id="resetLuas" type="reset">Reset</button>
+                <div id="luasSegitigaResult"></div>
+            </div>
+        </div>              
+        
+        <div class="right-side">
+            <h3 class="title">Keliling Segitiga</h3>
+            <h5 class="formula">Rumus Keliling Segitiga yaitu :</h5>
+            <h4>K = S1 + S2 + S3</h4>
+            <p>Dimana:</p>
+            <p>L = Keliling</p>
+            <p>S1 = Sisi A</p>  
+            <p>S2 = Sisi B</p>
+            <p>S3 = Sisi C</p>       
+           
+            <div class="section">
+                <h3 class="title">Hitung Keliling Segitiga</h3>
+                <input type="number" class="sisi" id="sisiA" placeholder="Nilai Sisi A">
+                <input type="number" class="sisi" id="sisiB" placeholder="Nilai Sisi B">
+                <input type="number" class="sisi" id="sisiC" placeholder="Nilai Sisi C">
+                <button id="hitungKel" type="submit">Hitung</button>
+                <button id="resetKel" type="reset">Reset</button>
+                <div id="kelilingSegitigaResult"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

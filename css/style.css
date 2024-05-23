@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(244, 243, 245);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: center;
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    position: relative; 
+}
+
+.left-side, .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative; 
+}
+
+.container::after {
+    content: ''; /* Menambahkan konten pseudo-element */
+    position: absolute; 
+    top: 20px; 
+    bottom: 20px; 
+    left: 50%; 
+    width: 2px; 
+    background-color: #333; 
+}
+
+.title {
+    margin: 3px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formula {
+    margin: 3px;
+    margin-top: 5px; 
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.left-side h4, .right-side h4 {
+    margin: 3px;
+    margin-top: 5px; 
+    text-align: center;
+}
+
+.left-side p {
+    margin: 1px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.right-side p {
+    margin: 1px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.section {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.alas, .tinggi {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.sisi {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+button {
+    padding: 8px 20px;
+    background-color: blue; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; 
+    margin-top: 10px;
+}
+
+button[type="reset"] {
+    background-color: red; 
+}
+
